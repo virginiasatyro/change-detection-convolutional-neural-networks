@@ -96,6 +96,4 @@ Na descrição das pastas acima, os arquivos TIF contém as imagens referentes a
 
 ## Bandas das Imagens Sentinel-2
 
-![image](img/bandas-sentinel-2.png)
-
 ![image](../img/bandas-sentinel-2.png)
