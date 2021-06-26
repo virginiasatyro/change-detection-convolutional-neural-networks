@@ -97,3 +97,8 @@ Na descrição das pastas acima, os arquivos TIF contém as imagens referentes a
 ## Bandas das Imagens Sentinel-2
 
 ![image](../img/bandas-sentinel-2.png)
+
+## Bandas/Imagens Multiespectrais
+
+- https://www.santiagoecintra.com.br/blog/geo-tecnologias/o-que-sao-os-sensores-multiespectraisy
+- https://xmobots.com.br/cameras-multiespectrais-no-sensoriamento-remoto-e-hora-de-rever-seus-conceitos/
