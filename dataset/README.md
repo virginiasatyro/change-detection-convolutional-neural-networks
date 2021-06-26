@@ -93,12 +93,35 @@ Na descrição das pastas acima, os arquivos TIF contém as imagens referentes a
 - [QGIS 3: Composição Colorida RGB para imagens Sentinel-2](https://www.youtube.com/watch?v=0r6KFfZvcjg) - como juntar as bandas TIF da imagem de satélite e criar uma imagem TIF ou PNG;
 - Baixar imagens de satélite: https://search.remotepixel.ca/#3/40/-70.5
 - [Composição RGB](https://www.instrutorgis.com.br/gdal-processamento-de-imagens-sentinel2_p01/);
+- [Composição - formando uma imagem colorida](https://www.instrutorgis.com.br/qgis3-composicao-colorida-rgb-sentinel2/);
 
 ## Bandas das Imagens Sentinel-2
 
 ![image](../img/bandas-sentinel-2.png)
 
-## Bandas/Imagens Multiespectrais
+### Bandas/Imagens Multiespectrais
 
 - https://www.santiagoecintra.com.br/blog/geo-tecnologias/o-que-sao-os-sensores-multiespectraisy
 - https://xmobots.com.br/cameras-multiespectrais-no-sensoriamento-remoto-e-hora-de-rever-seus-conceitos/
+- https://forest-gis.com/2019/12/sentinel-2-combinacao-bandas-baixar-dados.html/
+
+O Sentinel-2 tem 13 bandas espectrais, que vão do visível e do infra-vermelho próximo, até infra-vermelho de ondas curtas, em diferentes resoluções espaciais.
+
+Resolução espacial de cada banda ([level-2A](https://sentinel.esa.int/web/sentinel/user-guides/sentinel-2-msi/processing-levels/level-2)):
+
+- **10m**: bandas espectrais 2, 3, 4, 8, uma imagen *True Color Image* (**TCI**) e mapas **AOT** (*Aerosol Optical Thickness) e **WV** (*Water Vapour*) reamostrados a partir de 20m;
+- **20m**: contém bandas espectrais 2-7, as bandas 8A, 11 e 12, uma TCI, um mapa de classificação de cenas (**SCL**) e um mapa AOT e WV. A banda B8 é omitida, pois a B8A fornece informações espectrais mais precisas;
+- **60m**: contém todos os componentes do produto de 20m reamostrados para 60m e adicionalmente as bandas 1 e 9. A banda de cirro (nuvem) 10 é omitida, pois não contém informações de superfície;
+
+### Combinações de Bandas Sentinel-2 para cada utilidade
+
+- Cores naturais: 4-3-2
+- Cor falsa Infravermelho: 8-4-3
+- Cor falsa Urbana: 12-11-4
+- Agricultura: 11-8-2
+- Penetração atmosférica: 12-11-8a
+- Vegetação saudável: 8-11-2
+- Terra / Água: 8-11-4
+- Cores naturais com remoção atmosférica: 12-8-3
+- Infravermelho de ondas curtas: 12-8-4
+- Análise da vegetação: 11-8-4
