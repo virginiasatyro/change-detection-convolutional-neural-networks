@@ -125,3 +125,5 @@ Resolução espacial de cada banda ([level-2A](https://sentinel.esa.int/web/sent
 - Cores naturais com remoção atmosférica: 12-8-3
 - Infravermelho de ondas curtas: 12-8-4
 - Análise da vegetação: 11-8-4
+
+## Normalização
